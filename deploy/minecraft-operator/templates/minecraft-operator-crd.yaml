@@ -1,0 +1,17 @@
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  name: minecraft-operator.steve-meierhofer.com
+spec:
+  scope: Namespaced
+  group: steve-meierhofer.com
+  versions:
+    - name: v1
+      served: true
+      storage: true
+  names:
+    kind: MinecraftOperator
+    plural: minecraft-operator
+    singular: minecraft-operator
+    shortNames:
+      - mineop

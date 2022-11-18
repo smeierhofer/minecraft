@@ -1,0 +1,6 @@
+apiVersion: steve-meierhofer.com/v1
+kind: MinecraftOperator
+metadata:
+  name: minecraft-instance
+spec:
+  nodeport: 30087
